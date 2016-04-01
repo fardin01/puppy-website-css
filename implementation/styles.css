@@ -3,6 +3,7 @@
 body {
 	background: #2185c5 ;
 	margin: 0;
+	word-spacing: 3px;
 }
 
 .main-container {
@@ -21,19 +22,24 @@ a {
 }
 
 .header h1 {
-	border-bottom: solid 2px orange;
+	border-bottom: solid 3px #EE7600;
 	margin: 0 auto;
 	width: 60%;
-	padding-top: 5%
+	padding-top: 5%;
+	font-weight: bold;
+	text-transform: uppercase;
+	word-spacing: 25px;
+	letter-spacing: 15px;
 }
 
 .header img {
-	padding-top: 50px;
+	padding-top: 35px;
 }
 
 .content {
 	padding: 0 100px;
 	line-height: 170%;
+	text-align: justify;
 }
 
 .second-pup {
@@ -44,14 +50,15 @@ a {
 
 .third-pup {
 	width: 40%;
+	padding-left: 20px;
 	float: right;
 }
 
 .footer {
-	border: solid 3px orange;
+	border: solid 3px #EE7600;
 	text-align: center;
 	padding: 70px;
-	margin: 0 auto 10% auto;
+	margin: 30px auto 10% auto;
 	width: 50%;
 	text-transform: uppercase;
 	font-weight: bold;
