@@ -6,15 +6,23 @@ body {
 	word-spacing: 3px;
 }
 
+a {
+	color: orange;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+h1, h2 {
+	font-family: monospace;
+}
+
 .main-container {
 	background: white;
 	width: 65%;
 	margin: 0 auto;
 	height: 100%;
-}
-
-a {
-	color: orange;
 }
 
 .header {
@@ -28,8 +36,8 @@ a {
 	padding-top: 5%;
 	font-weight: bold;
 	text-transform: uppercase;
-	word-spacing: 25px;
-	letter-spacing: 15px;
+	word-spacing: 10px;
+	letter-spacing: 10px;
 }
 
 .header img {
@@ -63,3 +71,58 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
+
+/* Media Queries */
+
+/* Smart Phones and Tablet in Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	body {
+  		margin: 10px 10px;
+  		font-size: 3em;
+  	}
+
+  	h1, h2 {
+  		word-spacing: 2px;
+  	}
+  	.main-container {
+  		width: 100%;
+  	}
+
+  	.content {
+  		padding: 20px;
+  	}
+
+  	.second-pup, .third-pup {
+  		padding: 15px 0;
+  		width: 100%;
+  	}
+
+  	.footer {
+  		width: 80%;
+  	}
+}
+
+/* Smart Phones and Tablet in Landscape */
+@media only screen 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) {
+  	body {
+  		font-size: 1.5em;
+  	}
+  	.main-container {
+  		width: 85%;
+  	}
+
+  	.second-pup, .third-pup {
+  		padding: 15px 0;
+  		width: 100%;
+  	}
+
+  	.footer {
+  		width: 70%;
+  	}
+  }
